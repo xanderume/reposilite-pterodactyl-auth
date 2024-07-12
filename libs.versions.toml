@@ -1,0 +1,17 @@
+[versions]
+bcrypt = "0.10.2"
+mariadb = "3.0.7"
+exposed = "0.52.0"
+reposilite = "3.5.16-SNAPSHOT"
+
+[libraries]
+guava = {module = "com.google.guava:guava",version = "32.1.2-jre"}
+reposilite = {module = "com.reposilite:reposilite-backend",version.ref = "reposilite"}
+
+exposed-core = {module = "org.jetbrains.exposed:exposed-core",version.ref = "exposed"}
+exposed-jdbc = {module = "org.jetbrains.exposed:exposed-jdbc",version.ref = "exposed"}
+
+bcrypt = {module = "at.favre.lib:bcrypt",version.ref = "bcrypt"}
+mariadb = {module = "org.mariadb.jdbc:mariadb-java-client",version.ref = "mariadb"}
+
+kotlin-test = {module = "org.jetbrains.kotlin:kotlin-test"}
