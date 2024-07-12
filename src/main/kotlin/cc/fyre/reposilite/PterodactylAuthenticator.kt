@@ -23,7 +23,9 @@ class PterodactylAuthenticator(private val plugin: PterodactylAuthPlugin,private
 
     private val bcrypt = BCrypt.verifyer()
 
-    override fun priority(): Int = 10
+    override fun priority(): Double {
+        return 1.0
+    }
 
     override fun enabled(): Boolean {
         return this.plugin.getSettingsReference().map{it.enabled}

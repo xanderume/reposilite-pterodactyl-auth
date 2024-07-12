@@ -8,7 +8,6 @@ group = "cc.fyre.reposilite"
 
 repositories {
     reposilite()
-    mavenLocal()
     mavenCentral()
 }
 
